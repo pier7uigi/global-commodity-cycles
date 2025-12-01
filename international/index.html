@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Global Commodity Cycles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-day phase-pre">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        GLOBAL <span>COMMODITY</span> CYCLES
+      </h1>
+      <p class="hero-subtitle">
+        A journey through <b>Pre-Covid</b>, <i>Covid</i> and <strong>Post-Covid</strong> world phases.
+      </p>
+      <p class="hero-hint">
+     
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN PHASE SECTION -->
+  <main class="main-section">
+    <section class="phase-area">
+
+      <!-- phase curtain background -->
+      <div class="phase-curtain" id="phaseCurtain"></div>
+
+      <!-- phase label + tag -->
+      <div class="phase-label-row">
+        <div class="phase-label" id="phaseLabel">PRE-COVID</div>
+        <div class="phase-tag" id="phaseTag">STABLE ERA</div>
+      </div>
+
+      <div class="phase-layout">
+        <!-- STATIC GLOBE IMAGE -->
+        <div class="globe-wrapper">
+          <img id="globeImage" src="textures/earth-day.jpg" alt="World map" />
+          <!-- phase switcher dots -->
+          <div class="phase-switcher" aria-label="Phase navigation">
+            <button class="phase-dot phase-dot-active" data-phase="0" aria-label="Go to Pre-Covid"></button>
+            <button class="phase-dot" data-phase="1" aria-label="Go to Covid"></button>
+            <button class="phase-dot" data-phase="2" aria-label="Go to Post-Covid"></button>
+          </div>
+        </div>
+
+        <!-- vertical divider -->
+        <div class="phase-divider" aria-hidden="true"></div>
+
+        <!-- CONTENT CARD -->
+        <article class="card">
+          <header class="card-header">
+            <h2 id="cardPhaseTitle"></h2>
+          </header>
+
+          <nav class="tab-bar">
+            <button class="tab-btn tab-active" data-tab="0">WHAT HAPPENED</button>
+            <button class="tab-btn" data-tab="1">WHY IT MATTERS</button>
+            <button class="tab-btn" data-tab="2">KEY MECHANISMS</button>
+            <button class="tab-btn" data-tab="3">TAKEAWAY</button>
+          </nav>
+
+          <div class="tab-panel" id="tabPanel"></div>
+        </article>
+      </div>
+
+      <!-- NUMBERS THAT MATTER -->
+      <div class="metrics-strip" id="metricsStrip"></div>
+
+      <p class="phase-hint">
+        ← &nbsp;&nbsp;|&nbsp;&nbsp; press → 
+      </p>
+    </section>
+
+    <!-- QUESTIONS / CHIPS -->
+    <section class="questions">
+      <h3 class="questions-title">QUICK INSIGHTS</h3>
+      <p class="questions-subtitle">tap a question to get the <b>short answer</b></p>
+
+      <div class="chips">
+        <button class="chip" data-answer="0">Q1</button>
+        <button class="chip" data-answer="1">Q2</button>
+        <button class="chip" data-answer="2">Q3</button>
+        <button class="chip" data-answer="3">Q4</button>
+        <button class="chip" data-answer="4">Q5</button>
+        <button class="chip" data-answer="5">Q6</button>
+      </div>
+
+      <div class="answer-box" id="answerBox"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
